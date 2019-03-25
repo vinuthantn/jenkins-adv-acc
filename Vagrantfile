@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
 	ctl.vm.hostname = "master"
 	ctl.vm.network "private_network", ip: "172.31.0.100"
 	ctl.vm.provider "virtualbox" do |vb|
-	  vb.memory = 4048
+	  vb.memory = 2048
 	end
   end 	
 
@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
 	web01.vm.hostname = "node01"
 	web01.vm.network "private_network", ip: "172.31.0.111"
 	web01.vm.provider "virtualbox" do |vb|
-	  vb.memory = 3024
+	  vb.memory = 1024
 	end
   end 
   
@@ -31,7 +31,7 @@ Vagrant.configure(2) do |config|
 	web02.vm.hostname = "node02"
 	web02.vm.network "private_network", ip: "172.31.0.112"
 	web02.vm.provider "virtualbox" do |vb|
-	  vb.memory = 3048
+	  vb.memory = 1024
 	end
   end 
 end  
